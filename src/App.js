@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { HashRouter as Router, Route } from 'react-router-dom';
+import { HashRouter , Route } from 'react-router-dom';
 
 import { Provider } from 'react-redux';
 
@@ -17,8 +17,8 @@ import store from './store';
 function App() {
   return (
     <Provider store={store}>
-      {/* <Router basename={process.env.PUBLIC_URL}> */}
-      <Router >
+      {/* <HashRouter basename={process.env.PUBLIC_URL}> */}
+      <HashRouter >
         <div>
           <Navbar />
 
@@ -30,7 +30,7 @@ function App() {
           <Footer />
         </div>
 
-      </Router>
+      </HashRouter>
     </Provider>
 
   );
